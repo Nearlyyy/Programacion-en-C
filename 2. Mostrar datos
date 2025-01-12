@@ -1,0 +1,19 @@
+Programa 2: Implemente un programa en C que pida el nombre y la edad de un usuario. Luego debe imprimirlos
+
+#include <stdio.h>
+
+int main(){
+	char nombre[30];
+	
+	printf("Ingrese su nombre: ");
+	scanf("%s",&nombre);
+	
+	int edad;
+	
+	printf("Ingrese su edad: ");
+	scanf("%i",&edad);
+	
+	printf("Su nombre es %s y tiene %i años",nombre, edad);
+	
+	return 0;
+}
