@@ -1,0 +1,21 @@
+3. Crear un programa de C que me permita realizar las operaciones matemáticas básicas (suma, resta, multiplicación y division)
+
+#include <stdio.h>
+
+int main(){
+	
+	int numero1;
+	printf("Ingrese un número: "); 
+	scanf("%i",&numero1);
+	
+	int numero2;
+	printf("Ingrese otro número: ");
+	scanf("%i",&numero2);
+	
+	printf("\nLa suma de %i y %i es: %i",numero1, numero2, numero1 + numero2);
+	printf("\nLa resta de %i y %i es: %i",numero1, numero2, numero1 - numero2);
+	printf("\nLa multiplicacion de %i y %i es: %i",numero1, numero2, numero1 * numero2);
+	printf("\nLa division entera de %i y %i es: %i",numero1, numero2, numero1 / numero2);
+	
+	return 0;
+}
