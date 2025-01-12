@@ -1,0 +1,19 @@
+Programa 4: Crear un programa que calcule el promedio de 2 números
+
+#include <stdio.h>
+
+int main(){
+	
+	float numero1, numero2;
+	printf("Ingrese un número: ");
+	scanf("%f",&numero1);
+	
+	printf("Ingrese otro número: ");
+	scanf("%f",&numero2);
+	
+	float promedio = (numero1 + numero2) / 2;
+	
+	printf("El promedio de %.2f y %.2f es %.1f",numero1, numero2, promedio);
+	
+	return 0;
+}
