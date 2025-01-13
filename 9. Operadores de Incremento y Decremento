@@ -1,0 +1,16 @@
+Programa 9: Escriba un programa en C que haga uso de los operadores de incremento y decremento
+
+#include <stdio.h>
+
+int main(){
+	
+	int a = 10, b = 10;
+	a++;
+
+	printf("\nVariable a luego del incremento: %i", a);
+	
+	b--;
+	printf("\nVariable b luego del decremento: %i", b);
+	
+	return 0;
+}
