@@ -1,0 +1,27 @@
+Programa 11: Escriba un programa en C que pida 2 numeros y haga lo siguientes
+- Calcula la suma, resta, multiplicacion y division de ambos numeros
+- Determine que tipo de numero son los valores ingresados. Es decir, si son pares o impares
+
+
+#include <stdio.h>
+
+int main(){
+	
+	int n1, n2;
+	
+	printf("Ingrese un numero: ");
+	scanf("%i",&n1);
+	
+	printf("Ingrese otro numero: ");
+	scanf("%i",&n2);
+	
+	printf("\n%i + %i = %i",n1, n2, n1 + n2);
+	printf("\n%i - %i = %i",n1, n2, n1 - n2);
+	printf("\n%i * %i = %i",n1, n2, n1 * n2);
+	printf("\n%i / %i = %i",n1, n2, n1 / n2);
+	
+	printf((n1 % 2 == 0) ? "\n%i es par" : "\n%i es impar",n1);
+	printf((n2 % 2 == 0) ? "\n%i es par" : "\n%i es impar",n2);
+	
+	return 0;
+}
