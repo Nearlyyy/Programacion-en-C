@@ -1,0 +1,18 @@
+Programa 8: Escriba un programa de C que haga uso de los operadores de asignación
+
+#include <stdio.h>
+
+int main(){
+	
+	int n, suma, resta, multiplicacion, division;
+	
+	printf("Ingrese un numero: ");
+	scanf("%i",&n);
+	
+	printf("\nAumento en 3: %i",n += 3);
+	printf("\nDecremento en 5 al numero anterior: %i", n -= 5);
+	printf("\nMultiplicacion por 2 al numero anterior %i",n *= 2);
+	printf("\nDivision entre 3 al numero anterior %i",n /= 3);
+	
+	return 0;
+}
