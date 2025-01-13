@@ -1,0 +1,15 @@
+Programa 6: Implemente un programa que me permita ingresar un nombre e imprimirlo
+
+#include <stdio.h>
+
+int main(){
+	
+	char nombre[50];
+	
+	printf("Ingrese su nombre: ");
+	gets(nombre);
+	
+	printf("Su nombre es: %s",nombre);
+	
+	return 0;
+}
