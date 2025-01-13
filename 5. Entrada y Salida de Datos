@@ -1,15 +1,23 @@
-Programa 5: Escriba un programa en C que me pida un número. Posteriormente debe imprimirlo
+Programa 5: Escriba un programa en C que me pida un número entero, un decimal y un caracter. Posteriormente debe imprimirlos
 
 #include <stdio.h>
 
 int main(){
 	
 	int numero;
+	float otroNumero;
+	char caracter;
 	
-	printf("Ingrese un número: ");
+	printf("Ingrese un número entero: ");
 	scanf("%i",&numero);
 	
-	printf("El número ingresado es %i",numero);
+	printf("Ingrese un número decimal: ");
+	scanf("%f",&otroNumero);
+	
+	printf("Ingrese un carácter: ");
+	scanf(" %c",&caracter);
+	
+	printf("Numero entero: %i\nNumero decimal: %f\nCaracter: %c",numero, otroNumero, caracter);
 	
 	return 0;
 }
