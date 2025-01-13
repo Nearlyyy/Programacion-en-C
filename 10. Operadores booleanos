@@ -1,0 +1,22 @@
+Programa 10: Implemente un programa de C que pida 2 números y los compare haciendo uso de operadores relacionales y ternarios
+
+#include <stdio.h>
+
+int main(){
+	
+	int n1, n2;
+	
+	printf("Ingrese un número: ");
+	scanf("%i",&n1);
+	
+	printf("Ingrese otro número: ");
+	scanf("%i",&n2);
+	
+	printf("\n%i == %i = %s",n1, n2,(n1 == n2) ? "verdadero" : "falso");
+	printf("\n%i > %i = %s",n1, n2,(n1 > n2) ? "verdadero" : "falso");
+	printf("\n%i < %i = %s",n1, n2,(n1 < n2) ? "verdadero" : "falso");
+	printf("\n%i >= %i = %s",n1, n2,(n1 >= n2) ? "verdadero" : "falso");
+	printf("\n%i <= %i = %s",n1, n2,(n1 <= n2) ? "verdadero" : "falso");
+	
+	return 0;
+}
