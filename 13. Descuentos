@@ -1,0 +1,23 @@
+Programa 13:
+
+#include <stdio.h>
+
+/*
+Ejercicio 1: Una tienda acaba de inagurarse en la ciudad. Como una forma de atraer clientes, esta misma
+estableció que durante su primera semana habrá un descuento del 20% en todas las compras que se 
+realicen. Escriba un programa en C que calcule y muestre el precio sin descuento y con descuento
+*/
+
+int main(){
+	
+	float gasto, descuento20;
+	printf("Ingrese cuanto ha gastado: ");
+	scanf("%f", &gasto);
+	
+	descuento20 = gasto - (gasto * 0.2);
+	
+	printf("\nPrecio total: $%.2f",gasto);
+	printf("\nDescuento (20 %): $%.2f",(gasto * 0.2));
+	printf("\nPrecio final: $%.2f",descuento20);
+	return 0;
+}
