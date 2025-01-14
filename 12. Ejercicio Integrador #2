@@ -1,0 +1,52 @@
+Programa 12: Escriba un programa en C que calcule el area y perimetro de algunas figuras geometricas
+
+#include <stdio.h>
+#define PI 3.1416
+
+int main(){
+	
+	// Area y perimetro de un circulo
+	float radio;
+	
+	printf("Ingrese el radio de un circulo: ");
+	scanf("%f",&radio);
+	
+	printf("\nEl perimetro de un circulo de radio %.2f cm es: %.2f cm",radio, (2 * PI * radio));
+	printf("\nEl area de un circulo de radio %.2f cm es: %.2f cm^2\n\n",radio, (PI * radio * radio));
+	
+	// Area y perimetro de un cuadrado
+	float lado;
+	
+	printf("Ingrese el valor del lado del cuadrado: ");
+	scanf("%f",&lado);
+	
+	printf("\nEl perimetro de un cuadrado de lado %.2f cm es: %.2f cm",lado,(4 * lado));
+	printf("\nEl area de un cuadrado de lado %.2f cm es: %.2f cm\n\n",lado,(lado * lado));
+	
+	// Area y perimetro de un rectángulo
+	float base, altura;
+	
+	printf("Ingrese el valor de la base del rectangulo: ");
+	scanf("%f",&base);
+	
+	printf("Ingrese el valor de la altura del rectangulo: ");
+	scanf("%f",&altura);
+	
+	printf("\nEl perimetro de un rectangulo de lado %.2f cm es: %.2f cm",lado,(2 * (base + altura)));
+	printf("\nEl area de un rectangulo de lado %.2f cm es: %.2f cm\n\n",lado,(base * altura));
+	
+	// Area y perimetro de un triangulo
+	float lado1, lado2, lado3;
+	float baseTriangulo, alturaTriangulo;
+	
+	printf("Ingrese el valor de los lados del triangulo: ");
+	scanf("%f %f %f",&lado1, &lado2, &lado3);
+	
+	printf("Ingrese el valor de la base y altura del triangulo: ");
+	scanf("%f %f",&baseTriangulo, &alturaTriangulo);
+	
+	printf("\nEl perimetro del triangulo es: %.2f cm",(lado1 + lado2 + lado3));
+	printf("\nEl area de un triangulo es: %.2f cm",((baseTriangulo * alturaTriangulo) / 2));
+	
+	return 0;
+}
