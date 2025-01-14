@@ -17,7 +17,7 @@ int main(){
 	descuento20 = gasto - (gasto * 0.2);
 	
 	printf("\nPrecio total: $%.2f",gasto);
-	printf("\nDescuento (20 %): $%.2f",(gasto * 0.2));
+	printf("\nDescuento (20 %%): $%.2f",(gasto * 0.2));
 	printf("\nPrecio final: $%.2f",descuento20);
 	return 0;
 }
